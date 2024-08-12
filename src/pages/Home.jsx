@@ -10,7 +10,7 @@ const Home = () => {
       const response = await axios.get('https://flash-card-backend-7qj8.onrender.com/api/v1/data');
       console.log(response.data);
       setFlashcards(response.data.data);
-       // Assuming response.data is an array of flashcards
+      
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -18,7 +18,7 @@ const Home = () => {
 
   useEffect(() => {
    fetchData();
-  }, []); // Empty dependency array to run this effect only once on component mount
+  }, []); 
 
   console.log(flashcards)
   return (

@@ -11,7 +11,7 @@ const Update = () => {
     e.preventDefault();
 
     try {
-      // Prepare data to be sent
+  
       const data = {};
       if (question) data.question = question;
       if (answer) data.answer = answer;

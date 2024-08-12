@@ -1,15 +1,14 @@
 
 const pool = require('../db');
 const updateController=(req, res) => {
-    const { id } = req.params; // Get the id from the URL
-    const { question, answer } = req.body; // Get the question and answer from the request body
-
-    // Check if at least one field is provided
+    const { id } = req.params; 
+    const { question, answer } = req.body; 
+   
     if (!question && !answer) {
         return res.status(400).send('At least one of question or answer is required');
     }
 
-    // Construct the dynamic SQL query based on provided fields
+
     let query = 'UPDATE flipcard_info SET';
     const queryParams = [];
 
@@ -27,7 +26,7 @@ const updateController=(req, res) => {
     query += ' WHERE id = ?';
     queryParams.push(id);
 
-    // Execute the query with the dynamically constructed query string and parameters
+     
     pool.query(query, queryParams, (err, results) => {
         if (err) {
             console.error(err);
