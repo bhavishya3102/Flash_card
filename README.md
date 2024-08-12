@@ -1,8 +1,5 @@
-# React + Vite
+Summary of the Project
+In this project, we will use a MySQL database, React ,Expressjs and Vite to create flashcards. The application will allow users to add new flashcards, update existing ones, and delete flashcards.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+backend link- https://flash-card-backend-7qj8.onrender.com/
+frontend link- https://flashcard122.netlify.app/
