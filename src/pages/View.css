@@ -1,0 +1,64 @@
+/* Container styling */
+.view-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title styling */
+  .view-title {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid styling */
+  .flashcards-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  /* Flashcard item styling */
+  .flashcard-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Flashcard text styling */
+  .flashcard-question,
+  .flashcard-answer,.flashcard-id {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .flashcard-text {
+    margin: 2px 0;
+    color: #555;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .flashcards-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .flashcards-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
