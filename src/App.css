@@ -34,8 +34,8 @@
 
 .flip-card-front,
 .flip-card-back {
-  width: 110%;
-  height: 110%;
+  width: 120%;
+  height: 120%;
   position: absolute;
   backface-visibility: hidden;
   border-radius: 12px;
