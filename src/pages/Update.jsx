@@ -21,7 +21,7 @@ const Update = () => {
         return;
       }
 
-      const response = await axios.put(`http://localhost:5000/api/v1/update/${id}`, data);
+      const response = await axios.put(`https://flash-card-backend-7qj8.onrender.com/api/v1/update/${id}`, data);
       setMessage(`Entry updated successfully: ${response.data.message}`);
       setId('');
       setQuestion('');

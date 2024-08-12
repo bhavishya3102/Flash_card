@@ -10,7 +10,7 @@ const Add = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://localhost:5000/api/v1/add', {
+            const response = await axios.post('https://flash-card-backend-7qj8.onrender.com/api/v1/add', {
                 question,
                 answer,
             });

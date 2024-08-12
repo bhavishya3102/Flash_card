@@ -7,7 +7,7 @@ const Home = () => {
   const [flashcards,setFlashcards] = useState([""]);
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/v1/data');
+      const response = await axios.get('https://flash-card-backend-7qj8.onrender.com/api/v1/data');
       console.log(response.data);
       setFlashcards(response.data.data);
        // Assuming response.data is an array of flashcards
